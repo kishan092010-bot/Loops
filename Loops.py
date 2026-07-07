@@ -134,3 +134,46 @@ for i in range(0,n,2):
     print(i)
 
 
+# While Loops - It keeps running as long as the condition is true
+
+# Syntax - While condition:
+              # Statement
+
+
+# Assignment 1
+
+n = int(input("Enter the value of a number: "))
+sum = 0
+i = 1
+
+while i <= n:
+    print("The value of i is:", i)
+    print("Before sum value:", sum)
+    sum = sum + i
+    print("After sum value:", sum)
+    i = i + 1
+
+print("Sum is equal to:", sum)
+
+# Assignment 2: Armstrong Number
+
+ # It's a number where the sum of the cubes of its digits equals the original number.
+
+    # E.g:
+    # 153 = 1**3 + 5**3 + 3**3 = 1 + 125 + 27 = 153 again
+
+num = int(input("Enter a number: "))
+sum = 0
+temp = num
+print(num)
+
+while temp > 0:
+    digit = temp % 10
+    sum += digit ** 3
+    temp //= 10 
+
+if num == sum:
+    print(num, "is an armstrong number.")
+
+else:
+    print(num, "is not an armstrong number.")
